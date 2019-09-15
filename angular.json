@@ -24,7 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []
           },
@@ -117,6 +118,41 @@
             "production": {
               "devServerTarget": "paginator:serve:production"
             }
+          }
+        }
+      }
+    },
+    "ng-paginator": {
+      "projectType": "library",
+      "root": "projects/ng-paginator",
+      "sourceRoot": "projects/ng-paginator/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-paginator/tsconfig.lib.json",
+            "project": "projects/ng-paginator/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-paginator/src/test.ts",
+            "tsConfig": "projects/ng-paginator/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-paginator/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-paginator/tsconfig.lib.json",
+              "projects/ng-paginator/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }

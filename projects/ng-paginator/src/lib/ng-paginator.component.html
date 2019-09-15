@@ -1,0 +1,39 @@
+{{recordsCount}}
+<div class="grid-container" *ngIf="recordsCount">
+    <div style="display: inline-block">
+        <i class="fa fa-angle-double-left iconstyle" (click)="loadData(this.pages[0])" ></i>
+        <div (click)="loadData(this.activePage-1)" style="display: inline">
+            <i class="fa fa-angle-left iconstyle" aria-hidden="true"></i>
+            <span class="back">Back</span>
+        </div>
+        <span class="threedots" *ngIf="activePage === this.pages[pages.length-1] && this.pages.length !== 1">...</span>
+        <button *ngFor="let page of activePageNumbers" [ngClass]="page==activePage?'activepage' :'page' "
+            (click)="loadData(page)">{{page}}</button>
+        <span class="threedots" *ngIf="activePage !== pages[pages.length-1]">...</span>
+        <div style="display: inline">
+            <div style="display: inline">
+                <select class="dropdown" (change)="changeNoOfRecords($event.target.value)">
+                    <option [value]=25 style="font-weight: bold">
+                        25
+                    </option>
+                    <option [value]=50 style="font-weight: bold" selected>
+                        50
+                    </option>
+                    <option [value]=75 style="font-weight: bold">
+                        75
+                    </option>
+                    <option [value]=100 style="font-weight: bold">
+                        100
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div (click)="loadData(this.activePage+1)" style="display: inline">
+            <span class="next">Next</span>
+            <i class="fa fa-angle-right iconstyle" aria-hidden="true"></i>
+        </div>
+        <i class="fa fa-angle-double-right iconstyle" (click)="loadData(this.pages[this.pages.length-1])" aria-hidden="
+            true"></i>
+    </div>
+
+</div>

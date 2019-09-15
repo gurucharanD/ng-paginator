@@ -1,0 +1,76 @@
+.grid-container {
+    display: grid;
+    float: right;
+    margin-right: 30px;
+    padding: 5px;
+  }
+  
+  .grid-container {
+    display: inline-grid;
+  }
+  
+  .activepage {
+    background-color: #1079c4 !important;
+    border-radius: 2px;
+    box-shadow: none;
+    border: none;
+    color: white;
+    width: 40px;
+    margin: 3px;
+  }
+  
+  .page {
+    background-color: #ebe7e6 !important;
+    border-radius: 2px;
+    box-shadow: none;
+    border: none;
+    width: 40px;
+    margin: 3px;
+    font-weight: bold;
+  }
+  
+  .threedots {
+    border-radius: 2px;
+    box-shadow: none;
+    border: none;
+    width: 40px;
+    margin: 3px;
+    font-weight: bold;
+  }
+  
+  .forward {
+    margin: 3px;
+  }
+  
+  .backward {
+    margin: 3px;
+  }
+  
+  .back {
+    margin: 3px;
+    color: #1079c4;
+    font-weight: bold;
+    cursor: default;
+  }
+  
+  .next {
+    margin: 3px;
+    color: #1079c4;
+    font-weight: bold;
+    cursor: default;
+  }
+  
+  .iconstyle {
+    margin: 2px;
+    color: #1079c4 !important;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    margin: 3px;
+    border: none;
+    background-color: #ebe7e6;
+    border-radius: 2px;
+    font-weight: bold;
+  }
+  
