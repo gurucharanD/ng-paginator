@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {NgPaginatorModule} from '../../projects/ng-paginator/src/lib/ng-paginator.module';
+import {NgPaginatorModule} from '../../projects/ng-paginator-plus/src/lib/ng-paginator.module';
 import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
