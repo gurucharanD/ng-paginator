@@ -1,6 +1,20 @@
 {
   "name": "ng-paginator",
   "version": "0.0.1",
+  "description": "A simple paginator component that improves the experience of pagination import the paginator module into your root module and make the paginator component as your child component set the noOfRecords property on the paginator component through property binding and hangle the paginatorEvent emitted by thr paginator component and you are all set to go..",
+  "author": "gurucharanD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gurucharanD/ng-paginator"
+  },
+  "keywords": [
+    "angular",
+    "javascript",
+    "paginator",
+    "ng-paginator",
+    "ngpaginator"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^8.2.0",
     "@angular/core": "^8.2.0"
